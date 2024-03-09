@@ -1,0 +1,764 @@
+/* Header styling */
+header {
+    background-color: #f7d895;
+    padding: 10px 0;
+    height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Header title adjustments */
+header h1 {
+    margin: 0;
+    flex-grow: 1;
+}
+
+/* Body styling to accommodate fixed header */
+body {
+    padding-top: 80px;
+}
+
+
+/* Navigation bar styling */
+nav {
+    height: 3rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Section styling */
+section {
+    scroll-margin-top: 9rem;
+}
+
+/* Card styling */
+.card {
+    display: flex;
+    flex-direction: column; /* Stack image and content vertically on small screens */
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 3% 1% 3% 1%; /* Consistent margin */
+}
+
+.card-image {
+    border-radius: 15%;
+    width: 100%; /* Responsive width */
+    max-width: 350px; /* Maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    margin-bottom: 20px; /* Space between image and content */
+}
+
+.card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 2vw;
+}
+
+.card-content .greeting,
+.card-content .name,
+.card-content .role {
+    box-sizing: border-box;
+    margin-top: 0;
+    font-family: Dosis, sans-serif;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.card-content .greeting {
+    font-weight: 500;
+    font-size: calc(1rem + 1vw);
+    line-height: 1.2;
+}
+
+.card-content .name {
+    opacity: .8;
+    font-weight: 700;
+    line-height: .7;
+    font-size: calc(1.5rem + 2vw);
+    color: inherit;
+}
+
+.card-content .role {
+    font-weight: 500;
+    font-size: calc(0.8rem + 1vw);
+    line-height: 1.2;
+}
+
+/* Button styling */
+.btn-download {
+    background-color: #e5a51c;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.btn-download:hover {
+    background-color: darken(#c48705, 50%);
+    border-radius: 25px;
+}
+.no-underline {
+    text-decoration: none;
+}
+
+
+/* Cards container styling */
+.cards-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically on small screens */
+    align-items: stretch; /* Stretch cards to fill the container */
+    margin: 20px;
+}
+
+.card1 {
+    flex: 1;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.deatils{
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 0;
+    list-style: none;
+    color: #020202;
+    font-size: 15px; 
+    font-family: Dosis, sans-serif; 
+    line-height: 2.0;
+}
+.bi.bi-envelope,.bi.bi-telephone,.bi.bi-geo-alt{
+    color: #e5a51c;
+}
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 0;
+    max-width: 180px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.social-item {
+    display: inline-block;
+        margin: 0 10px; /* Adjust the space as needed */
+    
+}
+
+.social-link {
+    color: inherit; /* Ensures the icon inherits color from parent */
+    text-decoration: none; /* Optional: Removes underline from icons */
+}
+
+.bi-linkedin {
+    color: #0A66C2; /* LinkedIn brand color */
+}
+
+.bi-twitter {
+    color: #1DA1F2; /* Twitter brand color */
+}
+
+.fas.fa-envelope {
+    color: #DB4437; /* Gmail brand color */
+}
+
+
+.bi-instagram {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+                radial-gradient(circle farthest-corner at 0% 140%, #fec564, transparent 50%),
+                radial-gradient(ellipse farthest-corner at 0% -25%, #5258cf, transparent 50%),
+                radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+                radial-gradient(ellipse farthest-corner at 100% 0%, #893dc2, transparent 50%),
+                radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+                radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+                radial-gradient(ellipse farthest-corner at 60% 100%, #d9317a, transparent);
+    -webkit-background-clip: text;
+    color: transparent; /* Instagram gradient color */
+}
+
+.bi-github {
+    color: #181717; /* GitHub brand color */
+}
+
+.cards-container .card1:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+/* Text styling */
+.font-weight-light {
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-family: Dosis, sans-serif;
+    line-height: 1.2;
+    font-size: 1.75rem;
+    font-weight: 300 !important;
+}
+
+.linemb-5 {
+    box-sizing: border-box;
+    margin-bottom: 2rem !important;
+    display: block;
+    width: 25px;
+    height: 1.5px;
+    background-color: #e5a51c;
+}
+
+.mt-20 {
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-style: sans-serif;
+    font-size: calc(15px + (14 - 13) * ((100vw - 300px) / (1300 - 300)));
+    opacity: .8;
+    color: #1b1a1a;
+}
+
+.mb-3 {
+    box-sizing: border-box;
+    margin-top: 0;
+    font-family: Dosis, sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    margin-bottom: 1rem !important;
+}
+
+/* Custom styles for the expertise section */
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.bi.bi-graph-up, .bi.bi-cloud, .bi.bi-code-slash{
+    font-size: 24px; /* Adjust the size as needed */
+    color: #e5a51c;
+}
+
+h6.mb-0 {
+    margin-bottom: 0;
+    margin-top: 0; /* Ensure there's no top margin */
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Additional styling for the row/column if needed */
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.row:last-child hr {
+    display: none;
+}
+
+
+.col-12 {
+    padding-top: 1rem; 
+}
+/*My Expertise content Font-size*/
+h6.mb-0.ml-2 {
+    margin-bottom: 0;
+    font-size: 15px; 
+    font-family: Dosis, sans-serif; 
+}
+
+/*Resume Part*/
+.resume-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+    gap: 10px;
+}
+
+.resume-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%; /* Ensure the row takes full width */
+}
+
+.resume-col {
+    flex: 1;
+    padding: 15px;
+    max-width: calc(33.333% - 30px); /* Adjust for 3 columns */
+    min-width: 300px; /* Adjust minimum width as needed */
+}
+
+.section-title {
+    margin-left: 3%;
+    margin-bottom: 10px;
+    font-size: 2em;
+    box-sizing: border-box;
+    margin-top: 0;
+    font-family: Dosis,sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 2rem;
+    margin-bottom: 2rem!important;
+}
+
+.highlight {
+    color: #e5a51c;
+}
+
+.resume-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #212529;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0; /* Remove bottom margin */
+    text-align: center; /* Center the title text */
+}
+
+.linemb-4 {
+    width: 25px;
+    height: 1.5px;
+    background-color: #e5a51c;
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 2rem !important;
+}
+
+
+.card-body {
+    padding: 10px;
+}
+
+.title {
+    margin-top: 0;
+}
+
+.subtitle {
+    font-size: 0.9em;
+    color: #666;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+/*My Work Experience */
+.logo-bodies-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-body, .logo-body2 {
+    text-align: center;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.company-logo {
+    width: 200px;
+    height: auto;
+}
+
+.company-logo1 {
+    width: 200px;
+    height: 100px;
+}
+.role {
+    font-weight: bold; /* Makes the text bold */
+    color: black; /* Changes the text color; choose a color that suits your design */
+    font-size: 18px; /* Increases the font size */
+    margin-top: 10px; /* Adds space above the role */
+    margin-bottom: 10px; /* Adds space below the role */
+    padding: 5px; /* Optional: Adds padding inside the background color */
+    border-radius: 5px; /* Optional: Rounds the corners of the background */
+}
+
+.vertical-line {
+    text-size-adjust: 100%;
+    text-rendering: optimizelegibility;
+    font-feature-settings: "kern";
+    color: var(--chakra-colors-gray-800);
+    line-height: var(--chakra-lineHeights-base);
+    font-family: Roboto, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+    border-style: solid;
+    box-sizing: border-box;
+    border-color: var(--chakra-colors-gray-200);
+    overflow-wrap: break-word;
+    height: 100px;
+    width: 1px;
+    background-color: black;
+    margin-top: 1em;
+}
+
+
+
+/*Education*/
+.resume-card .title.text-danger {
+    font-size: 1.1em; /* Increase the font size as needed */
+    color: #0b0b0a; /* Assuming text-danger is a red color */
+    margin-bottom: 0.5em;
+}
+
+.resume-card p {
+    font-size: 1.05em; /* Increase the font size for paragraph */
+}
+
+.resume-card .subtitle {
+    font-size: 0.95em; /* Adjust the subtitle font size as needed */
+}
+
+/*skills*/
+.card-body.pb-2{
+font-family: "Source Sans Pro",sans-serif;
+font-weight: 400;
+line-height: 1.5;
+text-align: left;
+word-wrap: break-word;
+box-sizing: border-box;
+flex: 1 1 auto;
+padding: 1.25rem;
+padding-bottom: .5rem!important;
+font-size: 14px;
+color: #6c757d;
+}
+/* progress bars */
+h5{
+    color:black;
+
+}
+.progress-bar {
+    background-color: #e5a51c; /* Background color for the total progress bar */
+    height: 0.4rem; /* Adjust height as needed */
+    border-radius: .25rem;
+    margin-bottom: 1rem!important;
+    display: flex;
+    overflow: hidden;
+}
+.progress {
+    height: 100%;
+    background-color: gray; /* Adjust to match your theme, color for the filled part */
+}
+
+/* You can add this to make the unfilled part gray */
+.progress-bar:after {
+    content: "";
+    flex-grow: 1;
+    background-color: #e5a51c; /* Color for the unfilled part */
+}
+
+.progress-bar[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #e5a51c;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+/* Certification styles*/
+.certification, .learning{
+    font-size: 16px;
+}
+
+.certi, .blog {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.center-container {
+    text-align: center;
+    margin-bottom: 20px; /* Space between title/button and the marquee */
+}
+
+/* Marquee container styles for both sections */
+.marquee-container, .learning-marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Default view for certification and learning entries */
+.certification-entry, .learning-certification-entry {
+    display: inline-block;
+    margin-right: 3px;
+    box-sizing: border-box;
+    text-align: center; /* Center content */
+}
+
+/* Styles for the span containing the year in marquee mode */
+.certification-entry span, .learning-certification-entry span {
+    display: block; /* Make span block-level for centering */
+    width: 100%;
+    text-align: center;
+}
+
+/* List view adjustments */
+.list-view .certification-entry, .list-view .learning-certification-entry {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px; /* Adjusted padding */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    width: calc(25% - 20px); /* Adjust width to fit 4 items per row */
+    margin: -2px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    vertical-align: top;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.list-view .marquee-container, .list-view .learning-marquee-container {
+    overflow: visible;
+    white-space: normal;
+}
+
+.list-view .marquee, .list-view .learning-marquee {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    animation: none;
+}
+
+/* Marquee specifics */
+.marquee-container, .learning-marquee-container {
+    position: relative;
+}
+
+.marquee, .learning-marquee {
+    display: flex;
+    animation: marquee 20s linear infinite;
+    gap: 30px;
+}
+
+.marquee:hover, .learning-marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100% - 10px)); }
+}
+
+/* Button styling */
+.chakra-button {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .list-view .certification-entry, .list-view .learning-certification-entry {
+        width: calc(50% - 20px); /* Adjust for smaller screens, ensuring 2 items per row */
+        margin: 10px;
+    }
+}
+.marquee-container.list-view .duplicated-content {
+    display: none; /* Hide duplicated content in list mode */
+}
+
+
+/* certifications styles end here */
+
+/* Contact Styles Starts Here */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none; 
+}
+.carddetails{
+    text-align: center;
+}
+
+#personalInfoPopup .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 600px; /* Adjust width as needed */
+    margin: auto; /* Center the popup content */
+}
+
+#closePopup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: #ccc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px; /* Adjust if needed */
+    color: black; /* Adjust text color if needed */
+}
+
+
+#closePopup:hover {
+    background-color: #e2a115;/* Changes close button color on hover */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.input-container label {
+    width: 160px;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+
+
+button {
+    background-color: #e2a115;;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e2a115;
+}
+/* Contact styles END here */
+
+@media (max-width: 768px) {
+    .resume-col {
+        max-width: 100%;
+    }
+}
+
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .card {
+        flex-direction: row; /* Side-by-side layout on larger screens */
+    }
+
+    .cards-container {
+        flex-direction: row; /* Row layout for cards container */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: space-between; /* Space between cards */
+    }
+
+    .card-image {
+        width: 350px; /* Fixed width */
+        height: 350px; /* Fixed height */
+        margin-right: 20px; /* Margin between image and content */
+        margin-bottom: 0; /* Remove bottom margin */
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .info-card {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .info-card {
+        margin-top: 20px;
+    }
+}
+/* Learning Blog css starts here*/
+#learningblog { /* Centers text elements inside */
+    margin-top: 40px; /* Adjust this value as needed to create space at the top */
+    margin-bottom: 40px; 
+  }
+#learningblog h3 {
+    text-align: center;
+    margin: auto;
+  }
+

@@ -1,0 +1,459 @@
+<!Doctype html>
+<head>
+    <title>Swathi's Protfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home-card">Home</a></li>
+                <li><a href="#about-card">About</a></li>
+                <li><a href="#resume-section">Resume</a></li>
+                <li><a href="#certificate">Certifications</a></li>
+                <li><a href="#learn">My Learning Blog</a></li>
+                <li><a href="#personalInfoPopup" id="openPopup">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="card" id="home-card">
+        <img src="mypic.jpg" class="card-image"/>
+        <div class="card-content">
+            <h1 class="greeting">Hello, I am</h1>
+            <h1 class="name">Swathi Gaddampally</h1>
+            <h1 class="role">Data Engineer | Python Developer</h1>
+            <a href="Swathi_Gaddampally.pdf" download class="btn-download no-underline"><i class="bi bi-download"></i> Download Resume</a>
+        </div>
+    </section>
+    <section class="cards-container" id="about-card">
+    <section class="card1">
+            <h3 class="font-weight-light">Who am I ?</h3>
+            <span class="linemb-5"></span>
+            <h5 class="mb-3">A Data Engineer / Python Developer - Python rocks my world</h5>
+            <p class="mt-20">As a Data Engineer, I worked on improving how we handle data using tools like Azure Databricks and PySpark, making our data work faster and more accurately. I helped move our data systems to the cloud with Azure Cloud, making our work smoother and more reliable using Azure DevOps.<br>
+                I used Power BI to turn complex data into easy-to-understand reports, helping our team make better decisions. I set up processes in Azure Data Factory V2 to make sure data moves smoothly from start to finish and used Azure Synapse Analytics to keep our data accurate and up-to-date.<br>   
+                I also made sure our databases ran well and used Databricks Notebooks to spot and fix any data issues. This work made our data handling stronger and helped us use our data more effectively.                
+            </p>
+    </section>
+    <section class="card1">
+        <h3 class="font-weight-light">Personal Info</h3>
+        <span class="linemb-5"></span>
+        <ul class="deatils">
+            <li><i class="bi bi-envelope" aria-hidden="true"></i>&nbsp;&nbsp;<span>Email</span> : swathigaddampally13@gmail.com</li>
+            <li><i class="bi bi-telephone" aria-hidden="true"></i>&nbsp;&nbsp;<span>Phone</span> : + (816) 699-9147</li>
+            <li><i class="bi bi-geo-alt" aria-hidden="true"></i>&nbsp;&nbsp;<span>Address</span> : Kansas, USA</li>
+        </ul>        
+          <ul class="social-icons">
+            <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/gaddampallyswathi/"><i class="bi bi-linkedin" aria-hidden="true"></i></a></li>
+            <li class="social-item"><a class="social-link" href="https://twitter.com/swathig1101"><i class="bi bi-twitter" aria-hidden="true"></i></a></li>
+            <li class="social-item"><a class="social-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=swathigaddampally13@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+            <li class="social-item"><a class="social-link" href="https://www.instagram.com/swathi_1101_"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
+            <li class="social-item"><a class="social-link" href="https://github.com/swathi1310"><i class="bi bi-github" aria-hidden="true"></i></a></li>
+        </ul>        
+    </section>
+    <section class="card1">
+        <h3 class="font-weight-light">My Expertise</h3>
+        <span class="linemb-5"></span>
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-graph-up"></i>
+                    <h6 class="mb-0 ml-2">&nbsp;&nbsp;Data Engineering and ETL Development</h6>
+                </div>
+                <p class="subtitle">Microsoft Azure Data Services, SSIS, ETL processes, Data warehousing, MySQL and MongoDB.</p>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-code-slash"></i>
+                    <h6 class="mb-0 ml-2">&nbsp;&nbsp;Programming and Data Analysis</h6>
+                </div>
+                <p class="subtitle">Python (PySpark, Pandas, Matplotlib, Numpy), C, Java, JavaScript, PHP, and Data Visualization, Power BI.</p>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-cloud"></i>
+                    <h6 class="mb-0 ml-2">&nbsp;&nbsp;Cloud Computing and Azure Technologies</h6>
+                </div>
+                <p class="subtitle">Application deployment, Management and Migration on Microsoft Azure, Azure DevOps, Data Lake, Active Directory, and Synapse Analytics.</p>
+                <hr>
+            </div>
+        </div>
+        
+    </section>
+</section>
+<section class="resume-section" id="resume-section">
+    <h2 class="section-title"><span class="highlight">My</span> Resume</h2>
+    <div class="resume-row">
+        <div class="resume-col">
+            <div class="resume-card">
+                <div class="header-container">
+                    <div class="title-container">
+                    <h4 class="header-title">My Work Experience</h4>
+                    <span class="linemb-4"></span>
+                </div>
+                </div>
+                <div class="logo-bodies-container">
+                <div class="logo-body">
+                        <img src="Accenture.jpg" alt="Accenture" class="company-logo">
+                    <div class="role">Data Engineering Associate (Full Time)</div>
+                    <div class="Location">Hyderabad, India</div>
+                    <div class="date-range">August 2021 - December 2022</div>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="logo-body2">
+                    <img src="Brane.jpg" alt="Brane Logo" class="company-logo1">
+                <div class="role">Data Engineer Intern</div>
+                <div class="Location">Hyderabad, India</div>
+                <div class="date-range">May 2020 - December 2020</div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="resume-col">
+            <div class="resume-card">
+                <div class="header-container">
+                    <div class="title-container">
+                    <h4 class="header-title">Education</h4>
+                    <span class="linemb-4"></span>
+                </div>
+                </div>
+                <div class="card-body">
+                    <h6 class="title text-danger">Jan 2023 - May 2024</h6>
+                    <p>Master's in Computer Science</p>
+                    <p class="subtitle">University of Central Missouri</p>
+                    <hr>
+                    <h6 class="title text-danger">Aug 2017 - July 2021</h6>
+                    <p>Bachelor of Technology in Computer Science and Engineering</p>
+                    <p class="subtitle">Malla Reddy College of Engineering for Women</p>
+                    <hr>
+                    <h6 class="title text-danger">2015 - 2017</h6>
+                    <p>Junior College</p>
+                    <p class="subtitle">Sri Chaitanya Junior College</p>
+                    <hr>
+                    <h6 class="title text-danger">2014 - 2015</h6>
+                    <p>High School</p>
+                    <p class="subtitle">St Mary's High School</p>
+    
+                </div>
+            </div>
+        </div>
+        <div class="resume-col">
+            <div class="resume-card">
+                <div class="header-container">
+                    <div class="title-container">
+                    <h4 class="header-title">Primary Skills</h4>
+                    <span class="linemb-4"></span>
+                </div>
+                </div>
+                <div class="card-body pb-2">
+                    <h5>Python</h5>
+                    <div class="progress mb-3">
+                      <div class="progress-bar" style="width:80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h5>MySQL</h5>
+                    <div class="progress mb-3">
+                      <div class="progress-bar" style="width:85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h5>Data Engineering and ETL Development</h5>
+                    <div class="progress mb-3">
+                      <div class="progress-bar" style="width:80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h5>PySpark</h5>
+                    <div class="progress mb-3">
+                      <div class="progress-bar" style="width:85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h5>Azure Data Factory</h5>
+                    <div class="progress mb-3">
+                      <div class="progress-bar" style="width:90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h5>Azure Data Bricks</h5>
+                    <div class="progress mb-3">
+                      <div class="progress-bar" style="width:90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h5>Power BI</h5>
+                    <div class="progress mb-3">
+                      <div class="progress-bar" style="width:50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+            <script>
+                $(document).ready(function(){
+                    $('.progress-bar').hover(function(){
+                        var width = $(this).width();
+                        var parentWidth = $(this).parent('.progress').width();
+                        var percent = 100 * width / parentWidth;
+                        $(this).attr('title', percent.toFixed(0) + '%');
+                    });
+                 });
+                 $(document).ready(function() {
+    var maxHeight = 0;
+
+    // Find the tallest card
+    $('.resume-card').each(function() {
+        if ($(this).height() > maxHeight) {
+            maxHeight = $(this).height();
+        }
+    });
+
+    // Set all cards to the height of the tallest card
+    $('.resume-card').height(maxHeight);
+});
+            </script>  
+        </div>              
+        </div>
+        </div>
+    </div>
+</section>
+<section class="certification" id="certificate">
+    <div class="center-container">
+        <div class="title-and-button">
+            <div class="css-cx2b79">
+                <div class="certi">Certifications</div>
+            </div>
+            <button type="button" class="chakra-button css-nxx4hl" id="viewListButton">View as list</button>
+        </div>
+    </div>
+    <div class="marquee-container">
+        <div class="marquee">
+            <div class="certification-entry" data-url="https://www.credly.com/badges/c3321fad-a7c1-4d43-860e-ad14d52dd49f/public_url">
+                <h3>Microsoft Azure-Az900</h3>
+                <span>Issued on September 17,2022</span>
+                <button type="button" class="view-cert">Show Credential</button>
+            </div>
+            <div class="certification-entry" data-url="https://www.hackerrank.com/certificates/091359fd1cdb">
+                <h3>HackerRank - Python</h3>
+                <span>Issued on July 04, 2020</span>
+                <button type="button" class="view-cert">Show Credential</button>
+            </div>
+            <div class="certification-entry" data-url="https://www.futurelearn.com/certificates/ea2ccqv">
+               
+                <h3>Accenture - Digitals Skills <br> Artificial Intelligence</h3>
+                <span>Issued on June 04, 2020</span>
+                <button type="button" class="view-cert">Show Credential</button>
+            
+            </div>
+            <div class="certification-entry" data-url="https://drive.google.com/file/d/1N_Mr8BJnn41b5b9qKIBB9bupvr3e90Oo/view?usp=drive_link">
+                <h3>Solo Learn - Python</h3>
+                <span>Issued on March 22, 2020</span>
+                <button type="button" class="view-cert">Show Credential</button>
+            </div>
+            <div class="certification-entry" data-url="https://www.linkedin.com/learning/certificates/469e9ad4da5bf3f6de24f734923e9a15964dcd50b0f0b5a7323449c25fb38dc6">
+                <h3>LinkedIn-Web Development</h3>
+                <span>Issued on September 01, 2020</span>
+                <button type="button" class="view-cert">Show Credential</button>
+            </div>
+            <div class="certification-entry" data-url="https://www.linkedin.com/learning/certificates/f426e20ae367462ca67760833a9c19bcbab650a90356989bd23213ce9de21215">
+                <h3>LinkedIn - HTML</h3>
+                <span>2021</span>
+                <button type="button" class="view-cert">Show Credential</button>
+            </div>
+            <div class="certification-entry" data-url="https://drive.google.com/file/d/1lKxjgsxZ1TFeVGMGEl6RZlTNnuK2vRFZ/view?usp=drive_link">
+                <h3>MHRD - Leadership Talk</h3>
+                <span>Issued on May 09, 2020</span>
+                <button type="button" class="view-cert">See Credential</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Learning Blog 
+<br>
+<br>
+<br>
+<section class="learning" id="learn">
+    <div class="center-container">
+        <div class="title-and-button">
+            <div class="css-cx2b79">
+                <div class="blog">My Learning Blog</div>
+            </div>
+            <button type="button" class="chakra-button css-nxx4hl" id="viewLearnButton">View as list</button>
+        </div>
+    </div>
+    <div class="learning-marquee-container">
+        <div class="learning-marquee">
+            <div class="learning-certification-entry" data-url="https://www.credly.com/">
+                <h3>Microsoft Azure-Az900</h3>
+                <span>Earned September 17,2022</span>
+                <button type="button" class="learn-view-cert">See Credential</button>
+            </div>
+            <div class="learning-certification-entry" data-url="https://www.credly.com/badges/c3321fad-a7c1-4d43-860e-ad14d52dd49f/public_url">
+                <h3>Azure-Az900</h3>
+                <span>Earned September 17,2022</span>
+                <button type="button" class="learn-view-cert">See Credential</button>
+            </div>
+            <div class="learning-certification-entry" data-url="https://www.credly.com/badges/c3321fad-a7c1-4d43-860e-ad14d52dd49f/public_url">
+                <h3>hacker</h3>
+                <span>Earned September 17,2022</span>
+                <button type="button" class="learn-view-cert">See Credential</button>
+            </div>
+            <div class="certification-entry" data-url="http://example.com/certification1">
+                <h3>HackerRank - JavaScript</h3>
+                <span>2021</span>
+                <button type="button" class="view-cert">See Credential</button>
+            </div>
+            <div class="certification-entry" data-url="https://drive.google.com/file/d/1lKxjgsxZ1TFeVGMGEl6RZlTNnuK2vRFZ/view?usp=drive_link">
+                <h3>MHRD - Leadership Talk</h3>
+                <span>Issued on May 09, 2020</span>
+                <button type="button" class="view-cert">See Credential</button>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!--Contact Section -->
+<section id="personalInfoPopup" class="popup-overlay">
+    <div class="popup-content">
+        <button id="closePopup">X</button>
+        <h2 style = "text-align: center">Contact Details</h2>
+        <div class="carddetails">
+            <h3><span class="bi bi-envelope" aria-hidden="true"></span>&nbsp;&nbsp;<span>Email:&nbsp;</span>swathigaddampally13@gmail.com</style></h3>
+            <h3><span class="bi bi-telephone" aria-hidden="true"></span>&nbsp;&nbsp;<span>Phone:&nbsp;</span> + (816) 699-9147</h3>
+            <h3><span class="bi bi-geo-alt" aria-hidden="true"></span>&nbsp;&nbsp;<span>Address:&nbsp;</span> Kansas, USA</h3>
+    </div>
+</section>
+</body>
+<script>
+$(document).ready(function() {
+    // Open popup
+    $('#openPopup').click(function(e) {
+        e.preventDefault();
+        $('#personalInfoPopup').fadeIn();
+    });
+
+    // Close popup when clicking on the overlay
+    $(document).on('click', '#personalInfoPopup', function(e) {
+        if ($(e.target).is('#personalInfoPopup, #closePopup')) {
+            $('#personalInfoPopup').fadeOut();
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var viewToggleButton = document.getElementById('viewListButton');
+    var certificatesContainer = document.querySelector('.marquee-container');
+    var marquee = document.querySelector('.marquee');
+    var originalMarqueeContent = marquee.innerHTML; // Store the original content
+
+    // Initially duplicate the marquee content for the marquee effect
+    marquee.innerHTML += originalMarqueeContent;
+
+    viewToggleButton.addEventListener('click', function() {
+        certificatesContainer.classList.toggle('list-view');
+
+        if (certificatesContainer.classList.contains('list-view')) {
+            viewToggleButton.textContent = 'View as marquee';
+            // When switching to list view, keep only the original content to avoid visual duplication
+            marquee.innerHTML = originalMarqueeContent;
+        } else {
+            viewToggleButton.textContent = 'View as list';
+            // When switching back to marquee view, ensure content is duplicated for the scrolling effect
+            marquee.innerHTML = originalMarqueeContent + originalMarqueeContent;
+        }
+
+        setupCredentialButtons(); // Re-setup the event listeners for "See Credential" buttons after content update
+    });
+
+    // Function to setup "See Credential" buttons event listeners
+    function setupCredentialButtons() {
+        var viewCertButtons = document.querySelectorAll('.view-cert');
+
+        viewCertButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                var url = this.closest('.certification-entry').getAttribute('data-url');
+                window.open(url, '_blank');
+            });
+        });
+    }
+
+    setupCredentialButtons(); // Initially setup the event listeners
+});
+
+//learning Blog
+document.addEventListener('DOMContentLoaded', function() {
+    var viewToggleButton = document.getElementById('viewLearnButton');
+    var learningMarqueeContainer = document.querySelector('.learning-marquee-container');
+    var learningMarquee = document.querySelector('.learning-marquee');
+    var originalMarqueeContent = learningMarquee.innerHTML; // Store the original content
+
+    // Duplicate the marquee content for the marquee effect initially
+    learningMarquee.innerHTML += originalMarqueeContent;
+
+    viewToggleButton.addEventListener('click', function() {
+        learningMarqueeContainer.classList.toggle('list-view');
+
+        if (learningMarqueeContainer.classList.contains('list-view')) {
+            viewToggleButton.textContent = 'View as marquee';
+            // Keep only the original content to avoid visual duplication in list mode
+            learningMarquee.innerHTML = originalMarqueeContent;
+        } else {
+            viewToggleButton.textContent = 'View as list';
+            // Ensure content is duplicated for the marquee effect
+            learningMarquee.innerHTML = originalMarqueeContent + originalMarqueeContent;
+        }
+
+        setupCredentialButtons(); // Re-setup the event listeners for "See Credential" buttons
+    });
+
+    // Handle "See Credential" button clicks
+    function setupCredentialButtons() {
+        var viewCertButtons = document.querySelectorAll('.learn-view-cert');
+
+        viewCertButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                var url = this.closest('.learning-certification-entry').getAttribute('data-url');
+                window.open(url, '_blank');
+            });
+        });
+    }
+
+    setupCredentialButtons(); // Call it initially to setup event listeners for "See Credential" buttons
+});
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to equalize the heights of certification entries
+    function equalizeCardHeights() {
+        // Only adjust heights in list view
+        if (document.querySelector('.list-view')) {
+            // Get all certification entries
+            var entries = document.querySelectorAll('.certification-entry, .learning-certification-entry');
+
+            // Reset all heights to auto to get the natural height
+            entries.forEach(function(entry) {
+                entry.style.height = 'auto';
+            });
+
+            // Find the tallest entry
+            var maxHeight = 0;
+            entries.forEach(function(entry) {
+                if (entry.offsetHeight > maxHeight) {
+                    maxHeight = entry.offsetHeight;
+                }
+            });
+
+            // Set all entries to the height of the tallest entry
+            entries.forEach(function(entry) {
+                entry.style.height = maxHeight + 'px';
+            });
+        }
+    }
+
+    // Call the function initially and on every view toggle
+    equalizeCardHeights();
+    document.getElementById('viewToggleButtonId').addEventListener('click', function() {
+        // Timeout to allow for CSS transitions/animations if any
+        setTimeout(equalizeCardHeights, 300);
+    });
+});
+
+</script>
+</body>
+</html>
